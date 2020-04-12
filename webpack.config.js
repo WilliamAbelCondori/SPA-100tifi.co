@@ -1,5 +1,8 @@
 const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+//Hacemos referencia hacia el paquete que acabamos de instalar para implementar nuestro diseños
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+
 
 module.exports = {
   entry: "./src/index.js",
@@ -29,5 +32,10 @@ module.exports = {
         filename: "./index.html",
       },
     ),
+      new CopyWebpackPlugin([{
+        from: './src/styles/styles.css',
+        to:''
+      }])
+
   ],
 };
