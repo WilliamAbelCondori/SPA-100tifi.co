@@ -1,2 +1,2 @@
 # SPA-100tifi.co
-SinglePageAplication usando la API de Rick and Morty
+single-page application usando vanilla JavaScript y la API de Rick and Morty
